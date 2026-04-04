@@ -37,3 +37,4 @@ lefthook-local.yml
 # Environment
 .env
 .env.*
+!.env.example

@@ -1,7 +1,9 @@
+# Todoist MCP Server
+
 [![CI](https://github.com/stevesimpson418/todoist-mcp-server/actions/workflows/ci.yml/badge.svg)](https://github.com/stevesimpson418/todoist-mcp-server/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/stevesimpson418/todoist-mcp-server/graph/badge.svg)](https://codecov.io/gh/stevesimpson418/todoist-mcp-server)
-
-# todoist-mcp-server
+[![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A local MCP server for Todoist task management, designed for use with Claude.
 
@@ -106,10 +108,10 @@ uv run pytest -v
 uv run pytest --cov=todoist_mcp_server --cov-report=term-missing
 
 # Lint
-ruff check .
+uv run ruff check src/ tests/
 
 # Format
-ruff format .
+uv run ruff format src/ tests/
 
 # Install git hooks
 lefthook install
